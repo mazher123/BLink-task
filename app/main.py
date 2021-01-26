@@ -1,4 +1,7 @@
+import json
 from datetime import datetime
+from flask import Flask , jsonify,request
+
 
 #This funtion Calculate time difference in seconds 
 def TimeDifferenceInSec(t1, t2):
@@ -14,14 +17,9 @@ def TimeDifferenceInSec(t1, t2):
     return str(int(abs((t1-t2).total_seconds()))) 
 
 
-#Taking input
-t = int(input())
+app = Flask(__name__)
+@app.route('/',defaults={ 'BanglaLink : Start Something new '})
 
-#iterate through t and take input 
-for t_itr in range(t):
-    t1 = input()
-    t2= input()
+@app.route('/time-difference',methods=['GET'])
 
-    #final result is fetch from the function 
-    output = TimeDifferenceInSec(t1,t2)
-    print(output)
+        
