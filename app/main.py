@@ -31,4 +31,13 @@ def CalculateTimeInSec():
         #s2 = Test 2 input 2
 
         data=json.loads(Requests)
-  
+
+        t1 = str(data['t1'])
+        t2 = str(data['t2'])
+        s1 =str(data['s1'])
+        s2 = str(data['s2'])
+        testCase1 = TimeDifferenceInSec(t1,t2)
+        testCase2 = TimeDifferenceInSec(s1,s2)
+
+        ResData= json.dumps([testCase1, testCase2])
+   
