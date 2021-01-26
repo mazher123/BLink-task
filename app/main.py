@@ -14,7 +14,7 @@ def TimeDifferenceInSec(t1, t2):
     return str(int(abs((t1-t2).total_seconds()))) 
 
 
-#taking input
+#Taking input
 t = int(input())
 
 #iterate through t and take input 
@@ -23,5 +23,5 @@ for t_itr in range(t):
     t2= input()
 
     #final result is fetch from the function 
-    result = TimeDifferenceInSec(t1,t2)
-    print(result)
+    output = TimeDifferenceInSec(t1,t2)
+    print(output)
