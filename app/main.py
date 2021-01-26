@@ -22,7 +22,6 @@ def TimeDifferenceInSec(t1, t2):
 
 
 app = Flask(__name__)
-
  
 input1 ='Sun 10 May 2015 13:54:36 -0700'
 input2 ='Sun 10 May 2015 13:54:36 -0000'

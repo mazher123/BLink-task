@@ -26,5 +26,25 @@ s2 is testcasse2 input 2  \
 Time difference in seconds is calculated and return as order json array\ 
 
 
+#Task-C
+
+add hostname environment variable  to get the node id 
+containerize the application with dockerfile
+run two containers from the docker image
+
+build command :  docker build -t backend .
+run command : conatiner1 : docker  run -d -p 8080:8000 backend 
+              container2 :docker run -d -p  8081:8000 backend 
+
+Hit url :  Localhost:8081/
+           Localhost:8080/
+
+
+
+
+
+
+
+
 
 
