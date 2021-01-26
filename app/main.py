@@ -40,4 +40,10 @@ def CalculateTimeInSec():
         testCase2 = TimeDifferenceInSec(s1,s2)
 
         ResData= json.dumps([testCase1, testCase2])
-   
+        resp =  flask.Response(ResData)    
+        resp.headers['Access-Control-Allow-Origin'] = '*'
+        resp.content_type = 'application/json'
+        return resp
+
+if __name__ == "__main__":
+    app.run(debug=True)   
