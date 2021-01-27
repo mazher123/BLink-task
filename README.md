@@ -15,7 +15,7 @@ Flask is Install by PIP install flask \
 
 run python main.py 
 
-hit URL www.localhost/time-difference
+hit URL www.localhost:5000/time-difference
 
 Accept 4 data from API body \  
 t1  is testcase 1 input 1  \
